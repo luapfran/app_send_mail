@@ -18,7 +18,7 @@
 			<div class="py-3 text-center">
 				<img class="d-block mx-auto mb-2" src="logo.png" alt="avião de papel" width="72" height="72">
 				<h2>Send Mail</h2>
-				<p class="lead">Seu app de envio de e-mails particular!</p>
+				<p class="lead">Seu app de envio de e-mails particular!!!</p>
 			</div>
 
       		<div class="row">
@@ -34,7 +34,7 @@
 
 							<div class="field">
 								<label for="assunto">Assunto</label>
-								<input type="text" name="assunto" class="form-control" id="assunto" placeholder="Assundo do e-mail">
+								<input type="text" name="assunto" class="form-control" id="assunto" placeholder="Assunto do e-mail novo">
 								<p id="p2"></p>
 							</div>
 
