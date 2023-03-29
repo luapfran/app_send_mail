@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    /* $('#assunto').before('<label >Assunto Novo</label>'); */
+     //$('#assunto').before('<label >Assunto atual</label>'); 
     $('.ui.form').form({
         fields:{
             para:{
@@ -7,7 +7,7 @@ $(document).ready(function () {
                 rules: [
                     { 
                         type:'empty',
-                        prompt:'Digite o e-mail seu burro!'
+                        prompt:'Digite o e-mail corretamente!'
                     }
                 ]
             },
@@ -31,6 +31,9 @@ $(document).ready(function () {
             }            
         }
     });
+    $('.menu .item')
+        .tab()
+    ;
      
 });
 

@@ -26657,6 +26657,10 @@ Floated Menu / Item
 /* Responsive */
 
 @media only screen and (max-width: 767px) {
+  td {
+    color: #00827c;
+    border-color: #009c95;
+  }
   .ui.table:not(.unstackable) {
     width: 100%;
   }
@@ -26710,6 +26714,12 @@ Floated Menu / Item
   }
 }
 
+@media (orientation: landscape) {
+  table{
+    color: red;
+    border-color: gray;
+  }
+}
 /*******************************
             Coupling
 *******************************/

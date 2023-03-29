@@ -1,0 +1,20 @@
+###############################################################################
+#                          Generated on phpdocker.io                          #
+###############################################################################
+version: '3.9'
+services:
+    app:
+        image: php:8.0-apache
+        volumes:
+            - ./:/var/www/html
+        ports:
+            - 80:80
+    db:
+        image: mysql:latest
+        volumes:
+            - ./database:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: admin
+            MYSQL_DATABASE: appsend
+        ports:
+            - 3308:3308
