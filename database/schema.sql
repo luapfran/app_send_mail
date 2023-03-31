@@ -1,4 +1,3 @@
-create database appsend;
 use appsend;
 
 create table 'appsend'.'users'(
