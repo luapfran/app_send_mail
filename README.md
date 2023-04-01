@@ -29,3 +29,6 @@ netstat -o -n -a | findstr  0.160:51671
     }
     $conn->close();
 ?> 
+###### EXECUTAR COMANDO NO DOCKER  ######
+docker-compose exec "nome_imagem" docker-php-ext-install pdo pdo_mysql mysqli 
+docker-compose exec app docker-php-ext-install pdo pdo_mysql mysqli
