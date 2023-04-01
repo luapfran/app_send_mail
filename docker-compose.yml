@@ -5,16 +5,21 @@ version: '3.9'
 services:
     app:
         image: php:8.0-apache
+        container_name: app_send
         volumes:
             - ./:/var/www/html
         ports:
             - 80:80
+            - 443:443
+        links:
+        - db
     db:
         image: mysql:latest
+        container_name: database
         volumes:
-            - ./database:/var/lib/mysql
+            - /var/lib/mysql
         environment:
             MYSQL_ROOT_PASSWORD: admin
             MYSQL_DATABASE: appsend
         ports:
-            - 3308:3308
+            - 3306:3306
